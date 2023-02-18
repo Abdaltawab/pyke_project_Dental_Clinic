@@ -1,0 +1,141 @@
+
+
+
+#rahf
+#questions.kqb
+
+any_disasters($ans)
+	Are any of the following Things currently occurring?
+	---
+	$ans = select_1
+		1: Do you drink black drink such as (coffee,tea,colas?
+		       !you should brush your teeth after it
+		2: do you eat starchy food such as(pasta,potatoes)?
+		3: do you Smoke or chew tobacco can stain teeth?
+		4: have you ever get a medical treatment such as( head and neck radiation and chemotherapy )?
+		6: None of the above
+			! Thank goodness please Keep clean teeth
+
+is_yellow_color_stain($ans)
+	Is it exit yellow_color_stain?
+	---
+	$ans = yn
+
+is_gray_black_color_stain($ans)
+	Is it exit gray_black_color_stain?
+	---
+	$ans = yn
+
+is_discolor($ans)
+	Is it exit discolor in your teeth?
+	---
+	$ans = yn
+
+
+
+# abdaltawab
+is_red_and_swollen($ans)
+ 	Are the gums become red and swollen?
+ 	---
+ 	$ans = yn
+
+is_bleed($ans)
+	Is it can bleed easily?
+ 	---
+ 	$ans = yn
+
+is_pull_away_from_the_teeth($ans)
+    Is the gums pull away from the teeth and form pockets that become infected?
+    ---
+    $ans = yn
+
+# questions.kqb
+any_Things($ans)
+	Are any of the following Things currently occurring?
+	---
+	$ans = select_1
+		1: Do you eat food that contains sugars?
+		       !you should limit eat product sugars
+		2: do you find plaque bacteria on your teeth?
+		3: do you suffer from saliva host?
+		4: do you suffer from pain teeth?
+		5: None of the above
+			! Thank goodness please Keep clean teeth
+
+is_cavitation($ans)
+	Is it exit cavitation in your teeth?
+	---
+	$ans = yn
+
+is_black_color_stain($ans)
+	Is it exit black_color_stain ?
+	---
+	$ans = yn
+
+is_grayish_color($ans)
+	Is it exit grayish_color in your teeth ?
+	---
+	$ans = yn
+
+is_white_spot($ans)
+	Is it exit white spot lesion in your teeth  ?
+	---
+	$ans = yn
+#---------------------------------------------------------------------
+any_Causes_disease($ans)
+	Are any of the following Causes of disease currently occurring?
+	---
+	$ans = select_1
+		1: Are your gums swollen or swollen?
+		2: Do you find dark redness of the gums or dark red gums?
+		       !you should Reduce taking these medications
+		3: Do your gums bleed easily when you brush or floss your teeth?
+		4: Do you feel bad breath, receding gums, or weak gums?
+		5: None of the above
+			! Thank goodness that is Fantastic please Keep clean teeth
+
+is_redness_the_gums($ans)
+     Do you  have symptoms of redness and swelling of the gums?
+	---
+	$ans = yn
+is_side_effect($ans)
+	Do you take blood pressure or heart related medications?
+	---
+	$ans = yn
+is_poor_dental($ans)
+    Do you suffer from poor dental hygiene?
+	---
+	$ans = yn
+#---------------------------------------------------------------------------------
+any_disasters2($ans)
+   Are any of the following Things currently occurring?
+   ---
+   $ans = select_1
+      1: Is it painful when you bite or touch the affected area?
+      2: Is it so sensitive to cold or hot food and liquids?
+      3: Do you find it hard to open you mouth?
+      4: Do you get a foul tase in your mouth?
+      5: Do you suffer from fever?
+      6: Do you suffer from insomnia?
+      7: None of the above
+         ! Thank goodness please Keep clean teeth
+
+is_pain($ans)
+   Is it exit pain in your teeth?
+   ---
+   $ans = yn
+
+is_fever($ans)
+   Is it exit a fever ?
+   ---
+   $ans = yn
+
+is_bacterial_infection($ans)
+   Is it exit any bacterial infections in your teeth ?
+   ---
+   $ans = yn
+
+is_bad_taste($ans)
+   Is it exit a bad taste in your mouth ?
+   ---
+   $ans = yn

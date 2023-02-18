@@ -1,0 +1,380 @@
+num_case0
+    use what_to_should(Keep_clean_teeth_BY_Toothbrush)
+    when
+      questions.is_yellow_spot(False)
+
+num_case1
+    use what_to_should(this_is_normal_however_Keep_clean_teeth_BY_Toothbrush)
+    when
+      questions.is_white_spot(True)
+
+num_case2
+    use what_to_should(Thank_goodness_you_should_Keep_clean_teeth)
+    when
+      questions.is_yellow_stain(False)
+      questions.is_gray_black_color_stain(False)
+      questions.is_discolor(False)
+
+num_case3
+    use what_to_should(You_got_Discoloration_teeth_Go_to_the_doctor_for_A_consultation)
+    when
+        questions.is_yellow_color_stain(True)
+        questions.is_gray_black_color_stain(True)
+        questions.is_discolor(True)
+
+num_case4
+    use what_to_should(You_got_Discoloration_teeth_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_yellow_color_stain(True)
+        questions.is_gray_black_color_stain(True)
+        questions.is_discolor(False)
+
+num_case5
+    use what_to_should(You_got_Discoloration_teeth_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_yellow_color_stain(True)
+        questions.is_gray_black_color_stain(False)
+        questions.is_discolor(True)
+
+num_case6
+    use what_to_should(You_got_Discoloration_teeth_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_yellow_color_stain(True)
+        questions.is_gray_black_color_stain(False)
+        questions.is_discolor(False)
+
+num_case7
+    use what_to_should(You_got_Discoloration_teeth_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_yellow_color_stain(False)
+        questions.is_gray_black_stain(True)
+        questions.is_discolor(True)
+
+num_case8
+    use what_to_should(You_got_Discoloration_teeth_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_yellow_color_stain(False)
+        questions.is_gray_black_stain(True)
+        questions.is_discolor(False)
+
+num_case9
+    use what_to_should(You_got_Discoloration_teeth_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_yellow_color_stain(False)
+        questions.is_gray_black_stain(False)
+        questions.is_discolor(True)
+
+
+what_to_selection1
+    use what_to_should(Brush_your_teeth_after_drinking_black_drinks)
+    when
+        questions.any_disasters($ans)
+        check $ans in (1,)
+
+what_to_selection2
+    use what_to_should(Apply_over_the_counter_whiteners_available_in_stick_on_strips_or_tooth_shaped_trays)
+    when
+        questions.any_disasters($ans)
+        check $ans in (2,)
+
+
+what_to_selection3
+    use what_to_should(It_is_possible_that_your_teeth_have_changed_in_color_go_to_the_doctor)
+    when
+        questions.any_disasters($ans)
+        check $ans in (3,4)
+
+what_to_selection4
+    use what_to_should(Go_to_the_doctor_forA_consultation)
+    when
+        questions.any_disasters($ans)
+        check $ans in (5,)
+
+
+
+
+
+#abdaltawab
+what_you_have_Gingivitis_from_another_reson
+    use what_you_have(Gingivitis)
+    when
+        questions.is_red_and_swollen(True)
+
+what_you_have_Gingivitis_from_one_reson
+    use what_you_have(Gingivitis)
+    when
+        questions.is_bleed(True)
+
+what_you_havenot_Gingivitis
+    use what_you_have(not_Gingivitis)
+    when
+        questions.is_red_and_swollen(False)
+        questions.is_bleed(False)
+
+what_you_have_Gingivitis
+    use what_you_have(Gingivitis)
+    when
+        questions.is_red_and_swollen(True)
+        questions.is_bleed(True)
+
+
+what_you_have_periodontitis
+    use what_you_have(periodontitis)
+    when
+        questions.is_bleed(True)
+        questions.is_pull_away_from_the_teeth(True)
+
+what_you_have_not_periodontitis
+    use what_you_have(not_periodontitis)
+    when
+        questions.is_bleed(False)
+        questions.is_pull_away_from_the_teeth(False)
+
+
+
+
+
+
+
+
+
+#------------------------------------------------------------------
+# bc_simple_rules.krb
+num_case00
+    use what_to_should(Keep_clean_teeth_BY_Toothbrush)
+    when
+      questions.is_white_spot(False)
+
+num_case01
+    use what_to_should(this_is_normal_however_Keep_clean_teeth_BY_Toothbrush)
+    when
+      questions.is_white_spot(True)
+
+num_case02
+    use what_to_should(Thank_goodness_you_should_Keep_clean_teeth)
+    when
+      questions.is_cavitation(False)
+      questions.is_black_color_stain(False)
+      questions.is_grayish_color(False)
+
+num_case03
+    use what_to_should(You_got_cavities_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_cavitation(True)
+        questions.is_black_color_stain(True)
+        questions.is_grayish_color(True)
+
+num_case04
+    use what_to_should(You_got_cavities_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_cavitation(True)
+        questions.is_black_color_stain(True)
+        questions.is_grayish_color(False)
+num_case05
+    use what_to_should(You_got_cavities_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_cavitation(True)
+        questions.is_black_color_stain(False)
+        questions.is_grayish_color(True)
+num_case06
+    use what_to_should(You_got_cavities_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_cavitation(True)
+        questions.is_black_color_stain(False)
+        questions.is_grayish_color(False)
+num_case07
+    use what_to_should(You_got_cavities_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_cavitation(False)
+        questions.is_black_color_stain(True)
+        questions.is_grayish_color(True)
+num_case08
+    use what_to_should(You_got_cavities_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_cavitation(False)
+        questions.is_black_color_stain(True)
+        questions.is_grayish_color(False)
+num_case09
+    use what_to_should(You_got_cavities_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_cavitation(False)
+        questions.is_black_color_stain(False)
+        questions.is_grayish_color(True)
+
+what_to_selection01
+    use what_to_should(Brush_your_teeth_after_eat_sugars)
+    when
+        questions.any_Things($ans)
+        check $ans in (1,)
+
+what_to_selection02
+    use what_to_should(Go_to_the_doctor_forA_consultation)
+    when
+        questions.any_Things($ans)
+        check $ans in (2,)
+
+what_to_selection03
+    use what_to_should(It_is_possible_that_your_teeth_have_cavities_go_to_the_doctor)
+    #use what_to_bring(mnk)
+    when
+        questions.any_Things($ans)
+        check $ans in (3,4)
+#---------------------------------------------------function2--------------------------------------
+what_to_selection11
+    use what_to_shou(Maybe_you_got_gumsHyperPlasia_Go_to_the_doctor_forA_consultation)
+    when
+        questions.any_Causes_disease($ans)
+        check $ans in (1,2)
+
+what_to_selection12
+    use what_to_shou(Use_a_gum_rinser_and_it_will_get_better)
+    when
+        questions.any_Causes_disease($ans)
+        check $ans in (3,)
+
+what_to_selection13
+    use what_to_shou(It_is_possible_that_your_teeth_have_gumsHyperPlasia_go_to_the_doctor)
+    #use what_to_bring(mnk)
+    when
+        questions.any_Causes_disease($ans)
+        check $ans in (4,)
+num_case11
+    use what_to_shou(your_gums_are_fine_Keep_clean_teeth_BY_Toothbrush)
+    when
+      questions.is_redness_the_gums(False)
+num_case12
+    use what_to_shou(It_is_that_your_teeth_have_gumsHyperPlasia_go_to_the_doctor)
+    when
+      questions.is_redness_the_gums(True)
+      questions.is_side_effect(True)
+      questions.is_poor_dental(True)
+num_case13
+    use what_to_shou(Reduce_the_intake_of_these_medications_and_keep_your_teeth_clean_using_tooth_rinse)
+    when
+      questions.is_redness_the_gums(True)
+      questions.is_side_effect(True)
+      questions.is_poor_dental(False)
+num_case14
+    use what_to_shou(Keep_clean_teeth_BY_Toothbrush_and_tooth_rinse_And_you_will_notice_improvement_in_your_gums)
+    when
+      questions.is_redness_the_gums(True)
+      questions.is_side_effect(False)
+      questions.is_poor_dental(True)
+num_case15
+    use what_to_shou(There_may_be_other_reasons_for_bleeding_gums_consult_a_doctor)
+    when
+      questions.is_redness_the_gums(True)
+      questions.is_side_effect(False)
+      questions.is_poor_dental(False)
+#------------------------------------------------------------------------------------------------
+num_case20
+    use what_to_should2(Keep_clean_teeth_BY_Toothbrush)
+    when
+      questions.is_pain(False)
+
+num_case21
+    use what_to_should2(this_is_normal_however_Keep_clean_teeth_BY_Toothbrush)
+    when
+      questions.is_white_spot(True)
+
+num_case22
+    use what_to_should2(Thank_goodness_you_should_Keep_clean_teeth)
+    when
+      questions.is_pain(False)
+      questions.is_fever(False)
+      questions.is_bacterial_infections(False)
+
+num_case23
+    use what_to_should2(You_got_dental_abscess_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_pain(True)
+        questions.is_fever(True)
+        questions.is_bacterial_infections(True)
+
+num_case24
+    use what_to_should2(You_got_cavities_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_pain(True)
+        questions.is_fever(True)
+        questions.is_bacterial_infections(False)
+num_case25
+    use what_to_should2(You_got_cavities_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_pain(True)
+        questions.is_fever(False)
+        questions.is_bacterial_infections(True)
+num_case26
+    use what_to_should2(You_got_cavities_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_pain(True)
+        questions.is_fever(False)
+        questions.is_bacterial_infections(False)
+num_case27
+    use what_to_should2(You_got_cavities_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_pain(False)
+        questions.is_fever(True)
+        questions.is_bacterial_infections(True)
+num_case28
+    use what_to_should2(You_got_cavities_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_pain(False)
+        questions.is_fever(True)
+        questions.is_bacterial_infections(False)
+num_case29
+    use what_to_should2(You_got_cavities_Go_to_the_doctor_forA_consultation)
+    when
+        questions.is_pain(False)
+        questions.is_fever(False)
+        questions.is_bacterial_infections(True)
+
+what_to_selection21
+    use what_to_should2(Brush_your_teeth_softly)
+    when
+        questions.any_disasters2($ans)
+        check $ans in (1,)
+
+what_to_selection22
+    use what_to_should2(Avoid_food_and_drink_that_is_either_too_hot_or_too_cold)
+    when
+        questions.any_disasters2($ans)
+        check $ans in (2,)
+
+what_to_selection23
+    use what_to_should2(Go_to_the_doctor_for_a_consultion)
+    when
+        questions.any_disasters2($ans)
+        check $ans in (3,4)
+
+what_to_selection24
+    use what_to_should2(It_is_possible_that_your_teeth_have_dental_abscess_go_to_the_doctor)
+    when
+        questions.any_disasters2($ans)
+        check $ans in (5,6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
